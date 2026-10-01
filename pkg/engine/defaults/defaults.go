@@ -641,6 +641,7 @@ import (
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/redhatpyxis"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/redis"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/refiner"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/render"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/rentman"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/repairshopr"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/replicate"
@@ -1565,6 +1566,7 @@ func buildDetectorList() []detectors.Detector {
 		&redhatpyxis.Scanner{},
 		&redis.Scanner{},
 		&refiner.Scanner{},
+		&render.Scanner{},
 		&rentman.Scanner{},
 		&repairshopr.Scanner{},
 		&replicate.Scanner{},
